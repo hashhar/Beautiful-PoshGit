@@ -12,14 +12,19 @@ Sorry Unix people, not for you. :(
 You need to have [Posh-Git](https://github.com/dahlbyk/posh-git) installed. Thanks Keith Dahlby (@dahlbyk)
 See <a href="#installing">here</a> for instructions if you don't already have that.
 
-If you have installed PoshGit:
+If you don't want Beautiful-PoshGit to autoload everytime into your PowerShell Profile (I really don't know why you would want that :P), run the script below:
 ```
 cd $env:USERPROFILE/Documents/WindowsPowerShell/Modules
 git clone https://github.com/hashhar/beautiful-poshgit.git Beautiful-PoshGit
 ```
-You will have to reopen PowerShell and run `Import-Module Beautiful-PoshGit` everytime you open PowerShell. If you want it to be loaded automatically run,
+You will have to reopen PowerShell and run `Import-Module Beautiful-PoshGit` everytime you open PowerShell now.
+
+If you want it to be loaded automatically on every run, follow the steps below:
 ```
-Copy-Item $env:USERPROFILE\Documents\WindowsPowerShell\Modules\Beautiful-PoshGit\Microsoft.PowerShell_profile.ps1 -Destination $env:USERPROFILE\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+cd $env:USERPROFILE/Documents/WindowsPowerShell/Modules
+git clone https://github.com/hashhar/beautiful-poshgit.git Beautiful-PoshGit
+cd Beautiful-PoshGit
+.\install.ps1
 ```
 
 ## <h2 id="installing" name="installing">Installing Posh-Git</h2>
