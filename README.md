@@ -1,6 +1,6 @@
 # Beautiful-PoshGit
 
-My cosmetic improvements to Posh-Git.
+My cosmetic (UI mainly) improvements to Posh-Git.
 
 <img src="screenshot.png"></img>
 
