@@ -1,5 +1,7 @@
 # Beautiful-PoshGit
 
+## This has been archived since I can't seem to find much use for it anymore. The upstream is working great for me. Please fork if needed.
+
 My cosmetic (UI mainly) improvements to Posh-Git.
 
 <img src="screenshot.png"></img>
